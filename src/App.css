@@ -1,33 +1,86 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  --main-color: #FFFFFF;
+  --document-font: 'Open Sans', sans-serif;
+  ;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: var(--main-color);
+  font-family: var(--document-font);
+  font-size: 16px;
+  background-color: #171717;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  position: absolute;
+  right: 0;
+  margin: 30px 50px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--main-color);
+  margin: 10px;
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+li {
+  line-height: 25px;
+}
+
+.project-list {
+  line-height: 20px;
+}
+
+section > p {
+  margin: 0;
+}
+
+section {
+  margin: 16px 0px;
+}
+
+li:nth-child(1), .project-title, .inline-link {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+line {
+  stroke: var(--main-color);
+  stroke-width: 7px;
+}
+
+.hero {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  line-height: 1px;
+  width: 360px;
+  height: 250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skills-lists {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
