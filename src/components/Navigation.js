@@ -10,7 +10,7 @@ class Navigation extends Component {
 
         <Link to="/skills">Skills</Link>
         <Link to="/projects">Projects</Link>
-        <Link to="/">Contact</Link>
+        <Link to="/contact">Contact</Link>
 
       </nav>
     );

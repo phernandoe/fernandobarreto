@@ -10,7 +10,7 @@ class Skills extends Component {
      }
 
      createListItems(list) {
-          return list.map((item) => <li>{item}</li>);
+          return list.map((item) => <li key={item.toString()}>{item}</li>);
      }
 
      //Render lifecycle method

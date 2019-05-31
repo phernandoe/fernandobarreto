@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import HeroLine from '../HeroLine';
 
-class Landing extends Component {
+class Projects extends Component {
   //Render lifecycle method
   render(){
     //This is JSX - Javascript to render in the browser. HTML/JS Hybrid
@@ -10,6 +10,7 @@ class Landing extends Component {
           <h1>Projects</h1>
           <HeroLine />
           <div className="project-list">
+               
                <section>
                     <p> <span className="project-title">TECMap</span> - NLP, Maven, Java, Web Scraping </p>
                     <p>Worked with a team developing an application written primarily 
@@ -38,4 +39,4 @@ class Landing extends Component {
   }
 }
 
-export default Landing;
+export default Projects;
