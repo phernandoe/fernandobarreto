@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Formik } from 'formik';
 import HeroLine from '../HeroLine';
+import WithFormikContact from '../ContactForm';
 
 class Contact extends Component {
   //Render lifecycle method
@@ -10,6 +10,7 @@ class Contact extends Component {
      <div className="content">
           <h1>Let's chat!</h1>
           <HeroLine />
+          <WithFormikContact />
      </div>
     );
   }
