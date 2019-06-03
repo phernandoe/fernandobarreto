@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import HeroLine from '../HeroLine';
 
 class Landing extends Component {
   //Render lifecycle method
@@ -8,7 +7,7 @@ class Landing extends Component {
     return (
      <div className="content">
           <h1>Fernando Barreto</h1>
-          <HeroLine />
+          <hr />
           <h2>Web Developer</h2>
      </div>
     );

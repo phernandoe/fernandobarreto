@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import HeroLine from '../HeroLine';
 
 class Skills extends Component {
 
@@ -18,15 +17,15 @@ class Skills extends Component {
           //This is JSX - Javascript to render in the browser. HTML/JS Hybrid
           return (
                <div className="content">
-                    <h1>Skills</h1>
-                    <HeroLine />
+                    <h1>Things I know<span className="emoji" role="img" aria-label="hand wave"> 🤔</span></h1>
+                    <hr />
                     <div className="skills-lists">
-                         <ul>
+                         <ul className="skill-list"> 
                               <li>Languages</li>
                               {this.createListItems(this.languages)}
                          </ul>
 
-                         <ul>
+                         <ul className="skill-list">
                               <li>Design</li>
                               {this.createListItems(this.designTools)}
                          </ul>

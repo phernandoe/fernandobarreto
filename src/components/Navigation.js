@@ -8,9 +8,9 @@ class Navigation extends Component {
     return (
       <nav>
 
-        <Link to="/skills">Skills</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        <Link className="nav-links" to="/skills">Skills</Link>
+        <Link className="nav-links" to="/projects">Projects</Link>
+        <Link className="nav-links" to="/contact">Contact</Link>
 
       </nav>
     );

@@ -1,55 +1,84 @@
-import React from 'react';
-import { withFormik, Form, Field } from 'formik';
-import * as Yup from 'yup';
+import React, { Component } from 'react';
+import { Formik, Form, Field} from 'formik';
+import axios from 'axios';
+import qs from 'qs';
 
-const ContactForm = ({values, errors, touched, handleSubmit}) => (
-  <Form>
-    <label>
-      Name
-      <Field name="author" type="text" placeholder="Name" />
-      { touched.author && errors.author && <p>{errors.author}</p> }
-    </label>
+class ContactForm extends Component {
 
-    <label>
-      Email
-      <Field name="email" type="email" placeholder="example@me.com" />
-      { touched.email && errors.email && <p>{errors.email}</p> }
-    </label>
+  render() {
+    return (
+    <Formik 
+    initialValues={{
+      "bot-field": "",
+      "form-name": "contact",
+      author: "",
+      email: "",
+      subject: "",
+      body: ""
+    }} validate={values => {
+      let errors = {};
+      if (!values.email) {
+        errors.email = "Required";
+      } else if (
+        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+      ) {
+        errors.email = "Invalid email address";
+      }
+      if (!values.author) {
+        errors.author = "Required";
+      }
+      return errors;
+    }} onSubmit={values => {
+      const options = {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        data: qs.stringify(values),
+        url: "/"
+      };
 
-    <label>
-      Subject
-      <Field name="subject" type="text" placeholder="Subject" />
-      { touched.subject && errors.subject && <p>{errors.subject}</p> }
-    </label>
+      try {
+        axios(options);
+        alert("Message sent!");
+      } catch(e){
+        alert(e.message);
+      }
 
-    <label>
-      Message
-      <Field name="body" component="textarea" placeholder="Type in your message here" />
-    </label>
-    
-    <button type="submit">Send</button>
-  </Form>
-)
-
-const WithFormikContact = withFormik({
-  mapPropsToValues( {email, author, subject, body} ) {
-    return {
-      author: author || '',
-      email: email || '',
-      subject: subject || '',
-      body: body || '' 
     }
-  },
-  validationSchema: Yup.object().shape({
-    author: Yup.string().required('Name is required'),
-    email: Yup.string().email('Email is invalid').required('Email is required'),
-    subject: Yup.string().required('Subject is required')
-  }),
-  handleSubmit(values, {resetForm}) {
-    //This is where the email will get sent
-    console.log("Submitted!");
-    resetForm();
-  }
-})(ContactForm);
+    } 
+    >
 
-export default WithFormikContact;
+      <Form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" className="contact-form">
+
+        <Field type="hidden" name="form-name" />
+        <Field type="hidden" name="bot-field" />
+
+        <label className="form-field">
+          <p>Name</p>
+          <Field name="author" type="text"/>
+        </label>
+
+        <label className="form-field">
+          <p>Email</p>
+          <Field name="email" type="email"/>
+        </label>
+
+        <label className="form-field">
+          <p>Subject</p>
+          <Field name="subject" type="text"/>
+        </label>
+
+        <label className="form-field">
+          <p>Message</p>
+          <Field name="body" component="textarea" style={{}}/>
+        </label>
+
+        <button type="submit">Send</button>
+
+      </Form>
+
+    </Formik>
+    )
+  }
+}
+
+export default ContactForm;

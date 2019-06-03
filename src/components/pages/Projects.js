@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import HeroLine from '../HeroLine';
 
 class Projects extends Component {
   //Render lifecycle method
@@ -7,8 +6,8 @@ class Projects extends Component {
     //This is JSX - Javascript to render in the browser. HTML/JS Hybrid
     return (
      <div className="content">
-          <h1>Projects</h1>
-          <HeroLine />
+          <h1>Things I do<span className="emoji" role="img" aria-label="hand wave"> 📄</span></h1>
+          <hr />
           <div className="project-list">
                
                <section>
