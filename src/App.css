@@ -174,3 +174,18 @@ textarea {
 .clickable:hover, .clickable:focus {
   opacity: 0.7;
 }
+
+@media (max-width: 460px) {
+  .mobileLineBreak {
+    display: table;
+    line-height: 1px;
+  }
+
+  h2 .mobileLineBreak {
+    line-height: 80px;
+  }
+
+  h1 {
+    line-height: 80px;
+  }
+}

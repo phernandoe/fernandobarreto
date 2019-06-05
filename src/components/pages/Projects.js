@@ -6,7 +6,7 @@ class Projects extends Component {
     //This is JSX - Javascript to render in the browser. HTML/JS Hybrid
     return (
      <div className="content">
-          <h1>Things I do<span className="emoji" role="img" aria-label="hand wave"> 📄</span></h1>
+          <h1>Things <span className="mobileLineBreak">I do<span className="emoji" role="img" aria-label="hand wave"> 📄</span></span></h1>
           <hr />
           <div className="project-list">
                
@@ -26,10 +26,6 @@ class Projects extends Component {
                <section>
                     <p> <span className="project-title">Fernando Barreto</span> - React, CSS </p>
                     <p>This portfolio and it's many iterations!</p>
-               </section>
-
-               <section>
-                    <p className="inline-link">Github</p>
                </section>
 
           </div>

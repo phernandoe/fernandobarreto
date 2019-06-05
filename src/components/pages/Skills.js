@@ -17,7 +17,7 @@ class Skills extends Component {
           //This is JSX - Javascript to render in the browser. HTML/JS Hybrid
           return (
                <div className="content">
-                    <h1>Things I know<span className="emoji" role="img" aria-label="hand wave"> 🤔</span></h1>
+                    <h1>Things <span className="mobileLineBreak">I know<span className="emoji" role="img" aria-label="hand wave"> 🤔</span></span></h1>
                     <hr />
                     <div className="skills-lists">
                          <ul className="skill-list"> 

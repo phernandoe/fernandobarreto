@@ -6,9 +6,9 @@ class Landing extends Component {
     //This is JSX - Javascript to render in the browser. HTML/JS Hybrid
     return (
      <div className="content">
-          <h1>Fernando Barreto</h1>
+          <h1>Fernando <span className="mobileLineBreak">Barreto</span></h1>
           <hr />
-          <h2>Web Developer</h2>
+          <h2>Web <span className="mobileLineBreak">Developer</span></h2>
      </div>
     );
   }
