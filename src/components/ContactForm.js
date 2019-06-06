@@ -72,7 +72,7 @@ class ContactForm extends Component {
           <Field name="body" component="textarea" style={{}}/>
         </label>
 
-        <button type="submit">Send</button>
+        <button id="submit" className="clickable" type="submit"><span role="img" aria-label="mail" className="emoji">☞</span> Send</button>
 
       </Form>
 
