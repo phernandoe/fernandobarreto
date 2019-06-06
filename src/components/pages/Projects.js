@@ -11,7 +11,7 @@ class Projects extends Component {
           <div className="project-list">
                
                <section>
-                    <p> <span className="project-title">TECMap</span> - NLP, Maven, Java, Web Scraping </p>
+                    <p> <a href="https://github.com/tobydragon/tecmap" rel="noopener noreferrer" target="_blank" className="clickable project-title">TECMap</a> - NLP, Maven, Java, Web Scraping </p>
                     <p>Worked with a team developing an application written primarily 
                          in Java designed to aid instructors in 
                          designing course curricula.
@@ -19,7 +19,7 @@ class Projects extends Component {
                </section>
 
                <section>
-                    <p> <span className="project-title">Can't Decide</span> - HTML, CSS, Threejs </p>
+                    <p> <a href="https://phernandoe.github.io/CantDecide/" rel="noopener noreferrer" target="_blank" className="clickable project-title">Can't Decide</a> - HTML, CSS, Threejs </p>
                     <p>Small web app that chooses for you</p>
                </section>
 

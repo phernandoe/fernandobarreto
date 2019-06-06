@@ -9,15 +9,24 @@ html {
   --bg-color: #171717;
   --document-font: 'PT Serif', serif;
   --document-font-display: 'Helvetica Neue', sans-serif;
-  --nav-height: 85px;
+  --nav-height: 80px;
 }
 
 body {
+  position: relative;
   color: var(--main-color);
   font-family: var(--document-font);
   font-size: 16px;
   background-color: var(--bg-color);
   margin: 0;
+  min-height: 100vh;
+}
+
+.start {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -25,23 +34,25 @@ nav {
   margin: 0;
   align-items: center;
   justify-content: flex-end;
-  width: 100%;
+  width: 100vw;
   height: var(--nav-height);
+  min-height: var(--nav-height);
   background-color: var(--main-color);
   z-index: 1;
+  margin-bottom: 80px;
 }
 
-a {
+.nav-links {
   text-decoration: none;
   cursor: pointer;
   color: var(--bg-color);
-  margin: 30px;
+  margin: 2em;
   font-size: 1.1rem;
   z-index: 1;
   transition: 200ms;
 }
 
-.nav-links, h1 {
+.nav-links, h1, .footer-item {
   font-family: var(--document-font-display);
 }
 
@@ -103,7 +114,7 @@ section {
   margin: 16px 0px;
 }
 
-li:nth-child(1), .project-title, .inline-link {
+.skill-list li:nth-child(1), .project-title, .inline-link {
   font-weight: 600;
 }
 
@@ -118,13 +129,18 @@ line {
 }
 
 .hero {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: translateY(-70px);
   z-index: 0;
-  margin: 0 40px;
+  margin: 0px 40px;
+}
+
+.project-title {
+  text-decoration: none;
+  color: var(--main-color);
 }
 
 .content {
@@ -185,12 +201,34 @@ textarea {
   color: var(--main-color);
   cursor: pointer;
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: var(--document-font);
 }
 
 #submit > .emoji {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
+}
+
+#footer {
+  width: 100vw;
+  margin-top: auto;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item a {
+  transition: 200ms;
+  font-size: 0.8rem;
+  z-index: 1;
+  transition: 200ms;
+  margin: 0.2em 2em;
+  color: var(--main-color);
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 @media (max-width: 460px) {

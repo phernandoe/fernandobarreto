@@ -9,7 +9,7 @@ class Navigation extends Component {
 
       <div className="nav-container">
 
-        <Link className="logo-link" to="/">
+        <Link className="nav-links logo-link" to="/">
           <div className="logo-container">
             <p className="logo clickable">Fernan<br />do Ba<br />rreto</p>
           </div>
