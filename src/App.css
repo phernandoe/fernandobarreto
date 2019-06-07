@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700&display=swap');
 
+/* Initial HTML, Body, and main container setup */
+
 html {
   box-sizing: border-box;
   margin: 0;
@@ -22,6 +24,11 @@ body {
   min-height: 100vh;
 }
 
+hr {
+  border: 2px solid var(--main-color);
+  margin: 15px calc(-50vw + 50%);
+}
+
 .start {
   height: 100vh;
   min-height: 100vh;
@@ -29,8 +36,11 @@ body {
   flex-direction: column;
 }
 
+/* Navigation */
+
 nav {
   display: flex;
+  flex-direction: row;
   margin: 0;
   align-items: center;
   justify-content: flex-end;
@@ -76,14 +86,7 @@ nav {
   height: var(--nav-height);
 }
 
-.logo-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-container {
-  overflow: hidden;
-}
+/* Header tags */
 
 h1 {
   font-size: 2.5rem;
@@ -97,10 +100,7 @@ li {
   line-height: 25px;
 }
 
-hr {
-  border: 2px solid var(--main-color);
-  margin: 15px calc(-50vw + 50%);
-}
+/* Project list*/
 
 .project-list {
   line-height: 20px;
@@ -114,8 +114,12 @@ section {
   margin: 16px 0px;
 }
 
+/* Bold words */
+
 .skill-list li:nth-child(1), .project-title, .inline-link {
   font-weight: 600;
+  text-decoration: none;
+  color: var(--main-color);
 }
 
 ul {
@@ -123,10 +127,7 @@ ul {
   padding: 0;
 }
 
-line {
-  stroke: var(--main-color);
-  stroke-width: 7px;
-}
+/* Main content */
 
 .hero {
   height: 70vh;
@@ -138,16 +139,14 @@ line {
   margin: 0px 40px;
 }
 
-.project-title {
-  text-decoration: none;
-  color: var(--main-color);
-}
 
 .content {
   line-height: 1px;
   width: 360px;
   height: 250px;
 }
+
+/* Skills */ 
 
 .skills-lists {
   display: grid;
@@ -157,6 +156,8 @@ line {
 .skill-list {
   margin-top: 0;
 }
+
+/* Contact form */
 
 .form-field {
   display: grid;
@@ -183,18 +184,6 @@ textarea {
   max-height: 100px;
 }
 
-.emoji {
-  font-size: 1.7rem;
-}
-
-.clickable {
-  cursor: pointer;
-}
-
-.clickable:hover, .clickable:focus {
-  opacity: 0.7;
-}
-
 #submit {
   background-color: transparent;
   border: 0px;
@@ -208,6 +197,22 @@ textarea {
 #submit > .emoji {
   font-size: 1.3rem;
 }
+
+/* General */
+
+.emoji {
+  font-size: 1.7rem;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover, .clickable:focus {
+  opacity: 0.7;
+}
+
+/* Footer */
 
 #footer {
   width: 100vw;
@@ -231,6 +236,8 @@ textarea {
   box-sizing: border-box;
 }
 
+/* Media queries */
+
 @media (max-width: 460px) {
   .mobileLineBreak {
     display: table;
@@ -243,5 +250,18 @@ textarea {
 
   h1 {
     line-height: 80px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+
+  nav .nav-links {
+    margin: 0.1em;
+    margin-right: 40px;
+    font-size: 1rem;
+    line-height: 1.4em;
   }
 }

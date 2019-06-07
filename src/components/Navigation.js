@@ -11,7 +11,7 @@ class Navigation extends Component {
 
         <Link className="nav-links logo-link" to="/">
           <div className="logo-container">
-            <p className="logo clickable">Fernan<br />do Ba<br />rreto</p>
+            <p className="logo clickable">fernan<br />do ba<br />rreto</p>
           </div>
         </Link>
 
