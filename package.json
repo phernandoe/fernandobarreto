@@ -1,0 +1,27 @@
+{
+  "name": "fernandobarreto",
+  "version": "1.0.0",
+  "description": "Work in Progress",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phernandoe/fernandobarreto.git"
+  },
+  "author": "Fernando Barreto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phernandoe/fernandobarreto/issues"
+  },
+  "homepage": "https://github.com/phernandoe/fernandobarreto#readme",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
