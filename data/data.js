@@ -15,6 +15,21 @@ const data = {
     },
   ],
 
+  footerLinks: [
+    {
+      name: 'Github',
+      link: 'https://github.com/phernandoe'
+    },
+    {
+      name: 'Bēhance',
+      link: 'https://www.behance.net/bFernando'
+    },
+    {
+      name: 'Linkedin',
+      link: 'https://www.linkedin.com/in/fernando-barreto-696968161/'
+    }
+  ],
+
   skills: { 
     learning: {
       title: 'Learning',

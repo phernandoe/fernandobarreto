@@ -12,7 +12,7 @@ const Navigation = props => (
                 <a>{link.name}</a>
               </Link>
             </li>
-          ))}
+        ))}
 
       </ul>
 

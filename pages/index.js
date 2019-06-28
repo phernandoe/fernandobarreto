@@ -16,7 +16,7 @@ const Index = () => (
     
     <hr />
 
-    <Footer />
+    <Footer footerData={data.footerLinks}/>
 
   </React.Fragment>
 )

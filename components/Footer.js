@@ -1,27 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Footer = () => (
+const Footer = props => (
     <footer>
       <ul>
 
-        <li>
-          <Link href="https://www.google.com/">
-            <a target='blank'>Github</a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="https://www.google.com/">
-            <a target='blank'>Bēhance</a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="https://www.google.com/">
-            <a target='blank'>Linkedin</a>
-          </Link>{' '}
-        </li>
+        {props.footerData.map( link => (
+            <li key={link.name}>
+              <Link href={link.link}>
+                <a>{link.name}</a>
+              </Link>
+            </li>
+        ))}
 
       </ul>
 
