@@ -8,7 +8,7 @@ const Footer = props => (
         {props.footerData.map( link => (
             <li key={link.name}>
               <Link href={link.link}>
-                <a>{link.name}</a>
+                <a target='_blank'>{link.name}</a>
               </Link>
             </li>
         ))}
@@ -17,8 +17,8 @@ const Footer = props => (
 
       <p>
         Made with 🍞by
-        <Link href="https://www.google.com/"> 
-          <a> Fernando</a>
+        <Link href="https://github.com/phernandoe"> 
+          <a target='_blank'> Fernando</a>
         </Link>
       </p>
 

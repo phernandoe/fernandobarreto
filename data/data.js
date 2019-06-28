@@ -3,15 +3,15 @@ const data = {
   navLinks: [
     {
       name: 'Skills',
-      link: '/skills/'
+      link: '/skills'
     },
     {
       name: 'Projects',
-      link: '/projects/'
+      link: '/projects'
     },
     {
       name: 'Contact',
-      link: '/contact/'
+      link: '/contact'
     },
   ],
 

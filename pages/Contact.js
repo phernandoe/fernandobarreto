@@ -3,18 +3,19 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 
-const Index = () => (
+const Contact = () => (
 
   <Layout>
 
-    <section className='section landing'>
+    <section className='section projects'>
 
-      <Header title='Fernando Barreto' />
+      <Header title="Let's Chat!" />
       <hr />
 
     </section>
 
   </Layout>
+
 )
 
-export default Index;
+export default Contact;
