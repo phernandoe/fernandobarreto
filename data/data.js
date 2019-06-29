@@ -48,7 +48,7 @@ const data = {
         'CSS'
       ]
     },
-    desgin: {
+    design: {
       title: 'Design',
       items: [
         'Illustrator',
@@ -69,7 +69,7 @@ const data = {
       title: 'Fernando Barreto',
       tools: 'React, CSS, NextJs, Netlify, Formik',
       desc: "This portfolio and it's many interations!",
-      link: 'fernandobarreto.netlify.com'
+      link: 'https://fernandobarreto.netlify.com/'
     },
     {
       title: "Can't Decide",

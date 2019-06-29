@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 import styles from '../styles/style.css';
 import data from '../data/data';
 
-
 const Layout = props => (
 
   <React.Fragment>

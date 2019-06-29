@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Header = props => (
+const Header = ({title}) => (
     <h1>
-      {props.title}
+      {title}
     </h1>
 )
 
