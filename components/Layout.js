@@ -7,7 +7,7 @@ import styles from '../styles/style.css';
 import data from '../data/data';
 
 
-const Layout = (props) => (
+const Layout = props => (
 
   <React.Fragment>
 
