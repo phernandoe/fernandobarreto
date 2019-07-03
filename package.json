@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "start",
-    "export": "next export",
     "move-redirect":"node move-redirect.js",
-    "deploy": "npm run build && npm run export && npm run move-redirect"
+    "deploy": "npm run build",
+    "postexport": "npm run move-redirect.js"
   },
   "repository": {
     "type": "git",
