@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.copyFile('_redirects', './out/_next/static/_redirects', err => {
+fs.copyFile('_redirects', './out/_redirects', err => {
   if (err) {
     console.log('There was an error moving the _redirect file', err);
     throw err;
