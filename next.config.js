@@ -4,10 +4,10 @@ module.exports = withCSS(),
 {
   exportPathMap: async function(defaultPathMap) {
     return {
-      '/': { page: '/' },
-      '/contact': { page: '/contact' },
-      '/skills': { page: '/skills' },
-      '/projects': { page: '/projects' }
+      '/': { page: '/index' },
+      '/contact': { page: '/Contact' },
+      '/skills': { page: '/Skills.js' },
+      '/projects': { page: '/Projects' }
     };
   }
 }
