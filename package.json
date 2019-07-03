@@ -8,7 +8,7 @@
     "build": "next build && next export",
     "start": "start",
     "postexport": "node move-redirect.js",
-    "deploy": "npm run build && npm run postexport"
+    "deploy": "npm run build"
   },
   "repository": {
     "type": "git",
