@@ -3,15 +3,15 @@ const data = {
   navLinks: [
     {
       name: 'Skills',
-      link: '/skills'
+      link: '/Skills'
     },
     {
       name: 'Projects',
-      link: '/projects'
+      link: '/Projects'
     },
     {
       name: 'Contact',
-      link: '/contact'
+      link: '/Contact'
     },
   ],
 
@@ -35,7 +35,7 @@ const data = {
       title: 'Learning',
       items: [
         'React',
-        'NodeJs'
+        'Gatsby.js',
       ]
     },
     languages: {
@@ -67,7 +67,7 @@ const data = {
     },
     {
       title: 'Fernando Barreto',
-      tools: 'React, CSS, NextJs, Netlify, Formik',
+      tools: 'React, CSS, NextJs, Netlify, Gatsby',
       desc: "This portfolio and it's many interations!",
       link: 'https://fernandobarreto.netlify.com/'
     },

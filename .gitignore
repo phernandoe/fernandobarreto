@@ -1,7 +1,9 @@
 node_modules/
 .next
 out/
+public/
 
 # misc
 .DS_Store
 .vscode
+.cache/

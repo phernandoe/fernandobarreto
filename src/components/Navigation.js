@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import { Link } from 'gatsby';
 
 const Navigation = props => (
     <nav>
@@ -8,8 +8,8 @@ const Navigation = props => (
 
         {props.navData.map( link => (
             <li key={link.name}>
-              <Link href={link.link}>
-                <a>{link.name}</a>
+              <Link to={link.link}>
+                {link.name}
               </Link>
             </li>
         ))}
