@@ -5,7 +5,7 @@ const ProjectsContent = ({projects}) => (
     {projects.map( (project, index) => (
       <ul key={index}>
         <li key={project.title}>
-          <a target='_blank' href={project.link}>{project.title}</a>
+          <a rel="noopener noreferrer" target='_blank' href={project.link}>{project.title}</a>
         </li>
         <li key={project.tools}>{project.tools}</li>
         <li key={project.desc}>{project.desc}</li>

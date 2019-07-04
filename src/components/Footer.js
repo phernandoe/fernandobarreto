@@ -6,7 +6,7 @@ const Footer = props => (
 
         {props.footerData.map( link => (
             <li key={link.name}>
-              <a href={link.link} target='_blank'>{link.name}</a>
+              <a href={link.link} rel="noopener noreferrer" target='_blank'>{link.name}</a>
             </li>
         ))}
 
@@ -14,7 +14,7 @@ const Footer = props => (
 
       <p>
         Made with <span role='img' aria-label='bread'>🍞</span>by
-        <a target='_blank' href="https://github.com/phernandoe"> Fernando</a>
+        <a target='_blank' rel="noopener noreferrer" href="https://github.com/phernandoe"> Fernando</a>
       </p>
 
     </footer>

@@ -25,20 +25,20 @@ const ContactForm = () => {
       return;
     }
 
-    // const options = {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   data: qs.stringify(data),
-    //   url: "/"
-    // };
+    const options = {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      data: qs.stringify(data),
+      url: "/"
+    };
 
-    // try {
-    //   axios(options);
-    //   alert('Message sent!');
-    // } catch(error) {
-    //   //TODO: Handle Error
-    //   alert(error.message);
-    // }
+    try {
+      axios(options);
+      alert('Message sent!');
+    } catch(error) {
+      //TODO: Handle Error
+      alert(error.message);
+    }
 
     alert('Message sent!');
 
@@ -47,7 +47,12 @@ const ContactForm = () => {
   }
 
   return (
-    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" className="contact-form" onSubmit={handleSubmit}>
+    <form name="contact" method='post' data-netlify="true" data-netlify-honeypot="bot-field" className="contact-form" onSubmit={handleSubmit}>
+
+      {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" onChange={handleChange} />
+
       <label>
         Name:
         <input name='name' type='text' value={data.name} onChange={handleChange} />
