@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const Navigation = props => (
-    <nav>
+    <nav className='nav' >
 
-      <ul>
+      <ul className='list center-block'>
 
         {props.navData.map( link => (
             <li key={link.name}>
-              <Link to={link.link}>
+              <Link className='link list-link' to={link.link}>
                 {link.name}
               </Link>
             </li>

@@ -8,13 +8,13 @@ import data from '../data/data';
 
 const Layout = props => (
 
-  <React.Fragment>
+  <div className='container'>
 
     <Navigation navData={data.navLinks}/>
       <main id='main-content'>{props.children}</main>
     <Footer footerData={data.footerLinks}/>
 
-  </React.Fragment>
+  </div>
   
 )
 

@@ -1,6 +1,55 @@
+
 body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: red;
+}
+
+/* Setting up variables */
+:root {
+  --background-color: #171717;
+  --text-color: #FFFFFF;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100%;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* General styles */
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.center-block {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  list-style-type: none;
+}
+
+/* Navigation & Footer*/
+.footer {
+  position: relative;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+.list-link {
+  /* TODO: em/rem/px? */
+  margin: 1em;
 }
