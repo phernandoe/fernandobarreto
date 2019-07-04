@@ -33,8 +33,9 @@ const ContactForm = () => {
     };
 
     try {
-      axios(options);
-      alert('Message sent!');
+      axios(options).then(
+        alert('Message sent!')
+      );
     } catch(error) {
       //TODO: Handle Error
       console.log(error);
