@@ -37,7 +37,8 @@ const ContactForm = () => {
       alert('Message sent!');
     } catch(error) {
       //TODO: Handle Error
-      alert(error.message);
+      console.log(error);
+      alert('There was an error!');
     }
 
     alert('Message sent!');
@@ -51,7 +52,7 @@ const ContactForm = () => {
 
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
       <input type="hidden" name="form-name" value="contact" />
-      <input name="bot-field" onChange={handleChange} />
+      <input type="hidden" name="bot-field" onChange={handleChange} />
 
       <label>
         Name:
