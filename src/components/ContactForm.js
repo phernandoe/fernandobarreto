@@ -28,7 +28,7 @@ const ContactForm = () => {
     const options = {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      data: qs.stringify(data),
+      data: qs.stringify({ 'form-name': 'contact', ...data}),
       url: "/"
     };
 
