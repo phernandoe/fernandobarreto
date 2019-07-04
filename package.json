@@ -4,11 +4,9 @@
   "description": "Work in Progress",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "start",
-    "postexport": "node move-redirect.js",
-    "deploy": "npm run build"
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
