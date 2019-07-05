@@ -8,7 +8,9 @@ body, html {
 /* Setting up variables */
 :root {
   --background-color: #171717;
-  --text-color: #FFFFFF;
+  --text-color: #CCCCCC;
+  --hover-color: #FFFFFF;
+  --highlight-color: #E3B029;
 }
 
 html {
@@ -19,6 +21,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -31,9 +34,30 @@ body {
 }
 
 /* General styles */
+::selection {
+  background: var(--highlight-color);
+}
+
 .link {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.link:focus {
+  outline: 1px solid var(--highlight-color);
+  color: var(--hover-color);
+}
+
+.link:hover {
+  color: var(--hover-color);
+}
+
+.link-container {
+  border-radius: 0.2em;
+}
+
+.link-container:hover, .link-container:focus {
+  background-color: rgba(255,255,255,0.025);
 }
 
 .center-block {
@@ -82,6 +106,17 @@ hr {
   margin: 0;
   max-width: 500px;
   line-height: 100px;
+  cursor: default;
+}
+
+.float{
+  transition: 400ms ease-in-out;
+}
+
+.float:hover {
+  display: inline-block;
+  color: var(--highlight-color);
+  transform: translateY(-10px);
 }
 
 /* Index styles */
@@ -104,8 +139,14 @@ hr {
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 .project-item {
   margin-bottom: 0.5em;
+}
+
+.project-list {
+  background-color: rgba(255,255,255,0.010);
+  border-radius: 0.2em;
 }

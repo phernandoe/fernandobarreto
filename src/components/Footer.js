@@ -5,7 +5,7 @@ const Footer = props => (
       <ul className='list center-block'>
 
         {props.footerData.map( link => (
-            <li key={link.name}>
+            <li className='link-container' key={link.name}>
               <a className='link list-link' href={link.link} rel="noopener noreferrer" target='_blank'>{link.name}</a>
             </li>
         ))}
