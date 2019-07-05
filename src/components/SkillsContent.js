@@ -1,16 +1,16 @@
 import React from 'react';
 
 const SkillsContent = ({skills}) => (
-  <React.Fragment>
+  <section className='skills center-block'>
     {Object.values(skills).map( (skill, index) => (
-      <ul key={index}>
-        <li key={skill.title}>{skill.title}</li>
+      <ul className='list skill-list' key={index}>
+        <li className='skill-list-item skill-list-title emph' key={skill.title}>{skill.title}</li>
         {skill.items.map( item => (
-          <li key={item}>{item}</li>
+          <li className='skill-list-item' key={item}>{item}</li>
         ))}
       </ul>
     ))}
-  </React.Fragment>
+  </section>
 );
 
 export default SkillsContent;

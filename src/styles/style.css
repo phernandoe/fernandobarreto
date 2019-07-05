@@ -22,9 +22,12 @@ body {
 }
 
 .container {
+  --padding: 4em;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
 }
 
 /* General styles */
@@ -42,14 +45,67 @@ body {
   list-style-type: none;
 }
 
+.emph {
+  font-weight: bold;
+}
+
+#main-content {
+  font-size: 1.1rem;
+}
+
 /* Navigation & Footer*/
+.nav {
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
 .footer {
   position: relative;
   text-transform: uppercase;
   margin-top: auto;
+  font-size: 0.8rem;
 }
 
 .list-link {
   /* TODO: em/rem/px? */
-  margin: 1em;
+  margin: 2em;
+}
+
+/* The line in the middle */
+hr {
+  border: 2px solid var(--text-color);
+}
+
+/* Section headers */
+.section-header {
+  font-size: 7rem;
+  margin: 0;
+  max-width: 500px;
+  line-height: 100px;
+}
+
+/* Index styles */
+.index-header {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Skills */
+.skill-list {
+  margin: 0;
+}
+
+.skill-list-item {
+  margin-bottom: 0.5em;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-item {
+  margin-bottom: 0.5em;
 }

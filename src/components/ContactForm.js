@@ -56,22 +56,22 @@ const ContactForm = () => {
       <input type="hidden" name="bot-field" onChange={handleChange} />
 
       <label>
-        Name:
+        Name
         <input name='name' type='text' value={data.name} onChange={handleChange} />
       </label>
 
       <label>
-        Email:
+        Email
         <input name='email' type='email' value={data.email} onChange={handleChange} />
       </label>
 
       <label>
-        Subject:
+        Subject
         <input name='subject' type='text' value={data.subject} onChange={handleChange} />
       </label>
 
       <label>
-        Message:
+        Message
         <textarea name='message' value={data.message} onChange={handleChange} />
       </label>
 

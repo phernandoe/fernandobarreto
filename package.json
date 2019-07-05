@@ -4,7 +4,7 @@
   "description": "Work in Progress",
   "main": "index.js",
   "scripts": {
-    "dev": "gatsby develop -o",
+    "fast": "gatsby develop -o",
     "build": "gatsby build",
     "serve": "gatsby serve"
   },

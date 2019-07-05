@@ -11,7 +11,7 @@ const Index = () => (
 
       <Header title='Fernando Barreto' />
       <hr />
-      <h3>Web Developer & <br/> Designer</h3>
+      <h3 className='index-header center-block'>Web Developer & <br/> Designer</h3>
     </section>
 
   </Layout>

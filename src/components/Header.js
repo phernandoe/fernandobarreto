@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = ({title}) => (
-    <h1>
+    <h1 className='section-header'>
       {title}
     </h1>
 )

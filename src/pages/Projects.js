@@ -10,7 +10,7 @@ const Projects = () => (
 
   <Layout>
 
-    <section className='section projects'>
+    <section>
 
       <Header title='Things I Do' />
       <hr />

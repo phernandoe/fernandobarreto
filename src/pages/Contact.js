@@ -8,7 +8,7 @@ const Contact = () => (
 
   <Layout>
 
-    <section className='section projects'>
+    <section>
 
       <Header title="Let's Chat!" />
       <hr />
