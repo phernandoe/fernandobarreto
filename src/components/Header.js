@@ -3,7 +3,6 @@ import React from 'react';
 const Header = ({title}) => {
 
     const index = Math.floor(Math.random() * (title.length/2 - 1) + 1);
-    console.log(index);
     const startTitle = title.substring(0,index);
     const endTitle = title.substring(index+1);
 

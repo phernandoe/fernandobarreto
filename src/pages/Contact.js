@@ -12,7 +12,9 @@ const Contact = () => (
 
       <Header title="Let's Chat!" />
       <hr />
-      <ContactForm />
+      <section className='center-block'>
+        <ContactForm />
+      </section>
 
     </section>
 

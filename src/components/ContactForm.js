@@ -55,27 +55,30 @@ const ContactForm = () => {
       <input type="hidden" name="form-name" value="contact" />
       <input type="hidden" name="bot-field" onChange={handleChange} />
 
-      <label>
-        Name
-        <input name='name' type='text' value={data.name} onChange={handleChange} />
+      <div className='form-fields-short'>
+        <label className='form-field'>
+          <span className='form-label'>Name</span>
+          <input className='input-field' name='name' type='text' value={data.name} onChange={handleChange} />
+        </label>
+
+        <label className='form-field'>
+          <span className='form-label'>Email</span>
+          <input className='input-field' name='email' type='email' value={data.email} onChange={handleChange} />
+        </label>
+
+        <label className='form-field'>
+          <span className='form-label'>Subject</span>
+          <input className='input-field' name='subject' type='text' value={data.subject} onChange={handleChange} />
+        </label>
+
+      </div>
+
+      <label className='textarea-field'>
+        <span className='form-label'>Message</span>
+        <textarea name='message' placeholder="What did you have in mind?" value={data.message} onChange={handleChange} />
       </label>
 
-      <label>
-        Email
-        <input name='email' type='email' value={data.email} onChange={handleChange} />
-      </label>
-
-      <label>
-        Subject
-        <input name='subject' type='text' value={data.subject} onChange={handleChange} />
-      </label>
-
-      <label>
-        Message
-        <textarea name='message' value={data.message} onChange={handleChange} />
-      </label>
-
-      <input type="submit" value="Submit" />
+      <input className='submit' type="submit" value="Send" />
 
     </form>
   )

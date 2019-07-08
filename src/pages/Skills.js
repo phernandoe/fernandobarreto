@@ -10,7 +10,7 @@ const Skills = () => (
 
   <Layout>
 
-    <section className='section skills'>
+    <section className='section'>
 
       <Header title='Things I Know' />
       <hr />
