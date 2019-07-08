@@ -53,6 +53,7 @@ textarea:-webkit-autofill:focus {
   border-color: var(--highlight-color);
   -webkit-text-fill-color: var(--text-color);
   -webkit-box-shadow: 0 0 0px 1000px var(--background-color) inset;
+  box-shadow: 0 0 0px 1000px var(--background-color) inset;
 }
 
 .link {
@@ -62,6 +63,7 @@ textarea:-webkit-autofill:focus {
 
 .link:focus {
   outline: 1px solid var(--highlight-color);
+  outline-offset: 3px;
   color: var(--hover-color);
 }
 
@@ -89,6 +91,7 @@ textarea:-webkit-autofill:focus {
 
 #main-content {
   font-size: 1.1rem;
+  margin-top: auto;
 }
 
 /* Navigation & Footer*/
