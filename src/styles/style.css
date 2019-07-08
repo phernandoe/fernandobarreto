@@ -94,7 +94,6 @@ textarea:-webkit-autofill:focus {
 /* Navigation & Footer*/
 .nav {
   text-transform: uppercase;
-  margin-bottom: 2em;
 }
 
 .footer {
@@ -177,7 +176,6 @@ hr {
 
 /* Form */
 .contact-form {
-  /* background-color: rgba(255, 255, 255, 0.025); */
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 10px;
@@ -208,6 +206,12 @@ textarea {
   grid-template-columns: 1fr 3fr;
 }
 
+.form-fields-short {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .submit {
   font-size: 1.1rem;
   font-family: serif;
@@ -236,6 +240,11 @@ input:focus, textarea:focus {
 
   .projects {
     grid-gap: 0px;
+  }
+
+  .section-header {
+    font-size: 4.3rem;
+    line-height: 70px;
   }
 }
 
