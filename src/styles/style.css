@@ -254,18 +254,43 @@ input:focus, textarea:focus {
     grid-template-columns: 2fr;
   }
 
+  .section-header {
+    font-size: 5rem;
+  }
+
   .projects {
     grid-gap: 0px;
   }
 
   :root {
-    font-size: 10px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1999px) {
+  :root {
+    font-size: 20px
+  }
+
+  .section-header {
+    max-width: 600px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 170px;
+    max-width: 600px;
+    max-height: 170px;
   }
 }
 
 @media (min-width: 2000px) {
   :root {
     font-size: 25px
+  }
+
+  .section-header {
+    max-width: 600px;
   }
 
   textarea {
@@ -276,16 +301,4 @@ input:focus, textarea:focus {
   }
 }
 
-@media (min-width: 1600px) {
-  :root {
-    font-size: 20px
-  }
-
-  textarea {
-    width: 100%;
-    height: 170px;
-    max-width: 600px;
-    max-height: 170px;
-  }
-}
  
