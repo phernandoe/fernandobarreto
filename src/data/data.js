@@ -2,6 +2,10 @@ const data = {
   
   navLinks: [
     {
+      name: 'Home',
+      link: '/'
+    },
+    {
       name: 'Skills',
       link: '/Skills'
     },
@@ -12,7 +16,7 @@ const data = {
     {
       name: 'Contact',
       link: '/Contact'
-    },
+    }
   ],
 
   footerLinks: [
@@ -61,13 +65,13 @@ const data = {
   projects: [
     {
       title: 'TECMap',
-      tools: 'NLP, Maven, Java, Web Scraping',
+      tools: 'NLP, Maven, Java, Jsoup, HTML, CSS',
       desc: 'Worked with a team developing an application written primarily in Java designed to aid instructors in designing course curricula.',
       link: 'https://github.com/tobydragon/tecmap'
     },
     {
       title: 'Fernando Barreto',
-      tools: 'React, CSS, Next.js, Netlify, Gatsby',
+      tools: 'React, HTML, CSS, Next.js, Netlify, Gatsby',
       desc: "This portfolio and it's many interations!",
       link: 'https://fernandobarreto.netlify.com/'
     },

@@ -78,7 +78,7 @@ const ContactForm = () => {
         <textarea name='message' placeholder="What did you have in mind?" value={data.message} onChange={handleChange} />
       </label>
 
-      <input className='submit' type="submit" value="Send" />
+      <input className='submit' type="submit" value="Send &#9998;" />
 
     </form>
   )
