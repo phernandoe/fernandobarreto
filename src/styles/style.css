@@ -250,6 +250,10 @@ input:focus, textarea:focus {
     margin-top: auto;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   .contact-form, .projects {
     grid-template-columns: 2fr;
   }
@@ -290,7 +294,7 @@ input:focus, textarea:focus {
   }
 
   .section-header {
-    max-width: 600px;
+    max-width: 700px;
   }
 
   textarea {
