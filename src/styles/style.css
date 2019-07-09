@@ -265,7 +265,7 @@ input:focus, textarea:focus {
 
 @media (min-width: 2000px) {
   :root {
-    font-size: 40px
+    font-size: 25px
   }
 
   textarea {
@@ -276,3 +276,16 @@ input:focus, textarea:focus {
   }
 }
 
+@media (min-width: 1600px) {
+  :root {
+    font-size: 20px
+  }
+
+  textarea {
+    width: 100%;
+    height: 170px;
+    max-width: 600px;
+    max-height: 170px;
+  }
+}
+ 
