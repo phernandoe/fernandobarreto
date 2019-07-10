@@ -4,7 +4,9 @@ const SkillsContent = ({skills}) => (
   <section className='skills'>
     {Object.values(skills).map( (skill, index) => (
       <ul className='list skill-list' key={index}>
-        <li className='skill-list-item skill-list-title emph' key={skill.title}>{skill.title}</li>
+        <li className='skill-list-item' key={skill.title}>
+          <h3 className='skill-list-title emph'>{skill.title}</h3>
+        </li>
         {skill.items.map( item => (
           <li className='skill-list-item' key={item}>{item}</li>
         ))}

@@ -57,7 +57,8 @@ const data = {
       items: [
         'Illustrator',
         'Photoshop',
-        'Indesign'
+        'Indesign',
+        'Figma'
       ]
     }
   },
@@ -71,7 +72,7 @@ const data = {
     },
     {
       title: 'Fernando Barreto',
-      tools: 'React, HTML, CSS, Next.js, Netlify, Gatsby',
+      tools: 'React, HTML, CSS, Netlify, Gatsby, Figma',
       desc: "This portfolio and it's many interations!",
       link: 'https://fernandobarreto.netlify.com/'
     },
@@ -80,6 +81,12 @@ const data = {
       tools: 'HTML, CSS, Three.js',
       desc: 'Small web app that chooses for you.',
       link: 'https://phernandoe.github.io/CantDecide/'
+    },
+    {
+      title: "What's my winrate?",
+      tools: 'HTML, CSS, Next.js, React, Express',
+      desc: "Tool that calculates the winrate of League of Legends' accounts using the Riot Games API and displays it in a single page",
+      link: 'https://github.com/phernandoe/WhatsMyWinrate'
     }
   ]
 }

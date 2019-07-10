@@ -10,6 +10,7 @@ body, html {
   --text-color: #CCCCCC;
   --hover-color: #E3B029;
   --highlight-color: #E3B029;
+  --box-color: rgb(30, 30, 30);
   font-size: 16px;
 }
 
@@ -63,8 +64,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .link:focus {
-  outline: 1px solid var(--highlight-color);
-  outline-offset: 3px;
+  outline: none;
   color: var(--hover-color);
 }
 
@@ -146,11 +146,18 @@ hr {
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 30px;
 }
+
 .skill-list {
   padding: 0.5em;
-  background-color: rgba(255,255,255,0.010);
+  background-color: var(--box-color);
+  border-bottom: 3px solid var(--text-color);
+}
+
+.skill-list-title {
+  position: relative;
+  margin: 0;
 }
 
 .skill-list-item {
@@ -160,28 +167,48 @@ hr {
 /* Projects */
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 100px;
 }
 
 .project {
-  background-color: rgba(255,255,255,0.010);
-  border-radius: 0.2em;
+  background-color: var(--box-color);
+  border-bottom: 3px solid var(--text-color);
   padding: 0.5em;
 }
 
-.project > * {
-  --margin: 0.5em;
-  margin-bottom: var(--margin);
-  margin-top: var(--margin);
-}
-
 .project-title {
+  position: relative;
   margin: 0;
 }
 
-.project-tools {
+.project-desc, .tools {
+  margin-top: 0;
+}
+
+.tools-header {
+  margin-bottom: 0;
+}
+
+.tools {
   font-size: 0.9rem;
+}
+
+/* Cool little line */
+.project-title > .link::before, .skill-list-title::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  width: 30px;
+  height: 3px;
+  background: var(--highlight-color);
+  transition: 200ms ease-in-out;
+}
+
+.project-title > .link:hover::before {
+  width: 50px;
 }
 
 /* Form */
@@ -244,7 +271,7 @@ input:focus, textarea:focus {
 }
 
 /* Media Queries */
-@media (max-width: 620px) {
+@media (max-width: 675px) {
 
   #main-content {
     margin-top: auto;
