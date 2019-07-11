@@ -12,13 +12,6 @@ const Footer = props => (
 
       </ul>
 
-      {/* <p className='center-block'>
-        Made with
-        <span role='img' aria-label='bread'> 🍞</span>
-        by
-        <a className='link' target='_blank' rel="noopener noreferrer" href="https://github.com/phernandoe"> Fernando</a>
-      </p> */}
-
     </footer>
 )
 

@@ -68,7 +68,7 @@ textarea:-webkit-autofill:focus {
   color: var(--hover-color);
 }
 
-.link:hover {
+.link:hover, .link:active {
   color: var(--hover-color);
   border-bottom: 2px solid var(--highlight-color);
 }
@@ -79,7 +79,12 @@ textarea:-webkit-autofill:focus {
 }
 
 .list {
+  padding: 0;
   list-style-type: none;
+}
+
+.list-link {
+  margin: 10px;
 }
 
 .emph {
@@ -100,15 +105,7 @@ textarea:-webkit-autofill:focus {
   position: relative;
   text-transform: uppercase;
   margin-top: auto;
-  font-size: 1rem;
-}
-
-.list-link {
-  margin: 2em;
-}
-
-.list-link:first-child {
-  margin-left: 0;
+  font-size: 0.8rem;
 }
 
 /* The line in the middle */
@@ -215,7 +212,7 @@ hr {
 .contact-form {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
 .input-field {
@@ -258,6 +255,8 @@ textarea {
   color: var(--text-color);
   cursor: pointer;
   width: 25%;
+  text-align: center;
+  padding: 0.1em;
 }
 
 .submit:hover {
@@ -289,8 +288,12 @@ input:focus, textarea:focus {
     font-size: 5rem;
   }
 
-  .projects {
-    grid-gap: 0px;
+  .skill-list-title::before {
+    display: none;
+  }
+
+  .skills {
+    grid-gap: 5px;
   }
 
   :root {
@@ -300,7 +303,7 @@ input:focus, textarea:focus {
 
 @media (min-width: 1600px) and (max-width: 1999px) {
   :root {
-    font-size: 20px
+    font-size: 15px
   }
 
   .section-header {
@@ -317,7 +320,7 @@ input:focus, textarea:focus {
 
 @media (min-width: 2000px) {
   :root {
-    font-size: 25px
+    font-size: 20px
   }
 
   .section-header {
