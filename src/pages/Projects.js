@@ -10,6 +10,8 @@ const Projects = () => (
 
   <Layout>
 
+    <title>Fernando Barreto | Projects</title>
+
     <section>
 
       <Header title='Things I Do' />

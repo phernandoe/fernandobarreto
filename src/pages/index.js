@@ -7,6 +7,8 @@ const Index = () => (
 
   <Layout>
 
+    <title>Fernando Barreto | Home</title>
+
     <section className='section landing'>
 
       <Header title='Fernando Barreto' />

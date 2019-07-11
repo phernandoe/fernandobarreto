@@ -10,6 +10,8 @@ const Contact = () => (
 
     <section>
 
+      <title>Fernando Barreto | Contact</title>
+
       <Header title="Let's Chat!" />
       <hr />
       <section className='center-block'>

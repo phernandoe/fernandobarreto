@@ -10,6 +10,8 @@ const Skills = () => (
 
   <Layout>
 
+    <title>Fernando Barreto | Skills</title>
+
     <section className='section'>
 
       <Header title='Things I Know' />
