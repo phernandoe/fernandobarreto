@@ -63,7 +63,7 @@ const ContactForm = () => {
 
         <label className='form-field'>
           <span className='form-label'>Email</span>
-          <input className='input-field' placeholder="mscott@email.com" ame='email' type='email' value={data.email} onChange={handleChange} />
+          <input className='input-field' placeholder="mscott@email.com" name='email' type='email' value={data.email} onChange={handleChange} />
         </label>
 
         <label className='form-field'>
