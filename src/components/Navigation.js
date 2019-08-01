@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const Navigation = props => (
     <nav className='nav' >
 
-      <ul className='list center-block'>
+      <ul className='list right-block'>
 
         {props.navData.map( link => (
             <li className='link-container' key={link.name}>

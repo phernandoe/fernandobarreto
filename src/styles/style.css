@@ -58,6 +58,10 @@ textarea:-webkit-autofill:focus {
   box-shadow: 0 0 0px 1000px var(--background-color) inset;
 }
 
+.name {
+  color: var(--highlight-color);
+}
+
 .link {
   color: var(--text-color);
   text-decoration: none;
@@ -78,6 +82,11 @@ textarea:-webkit-autofill:focus {
   justify-content: center;
 }
 
+.right-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .list {
   padding: 0;
   list-style-type: none;
@@ -88,7 +97,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .emph {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #main-content {
@@ -97,15 +106,16 @@ textarea:-webkit-autofill:focus {
 
 /* Navigation & Footer*/
 .nav {
-  text-transform: uppercase;
   margin-bottom: 2em;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
 
 .footer {
   position: relative;
-  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-top: auto;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* The line in the middle */
@@ -137,6 +147,17 @@ hr {
   text-align: center;
   font-size: 2rem;
   margin: 0;
+}
+
+.index-spacer {
+  height: 200px;
+}
+
+.intro-p {
+  font-size: 1.3rem;
+  max-width: 425px;
+  margin-top: 0;
+  letter-spacing: 0.4px;
 }
 
 /* Skills */
@@ -193,7 +214,7 @@ hr {
 }
 
 /* Cool little line */
-.project-title > .link::before, .skill-list-title::before {
+.project-title > .link::before {
   content: '';
   position: absolute;
   right: 0;
@@ -270,6 +291,7 @@ input:focus, textarea:focus {
 }
 
 /* Media Queries */
+/* Moblile */
 @media (max-width: 675px) {
 
   #main-content {
@@ -280,7 +302,11 @@ input:focus, textarea:focus {
     overflow-x: hidden;
   }
 
-  .contact-form, .projects {
+  .index-spacer {
+    height: 0px;
+  }
+
+  .contact-form, .projects, .skills {
     grid-template-columns: 2fr;
   }
 
@@ -301,6 +327,7 @@ input:focus, textarea:focus {
   }
 }
 
+/* Large screens */
 @media (min-width: 1600px) and (max-width: 1999px) {
   :root {
     font-size: 15px
@@ -318,6 +345,7 @@ input:focus, textarea:focus {
   }
 }
 
+/* Larger Screens */
 @media (min-width: 2000px) {
   :root {
     font-size: 20px

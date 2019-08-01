@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = props => (
     <footer className='footer'>
-      <ul className='list center-block'>
+      <ul className='list right-block'>
 
         {props.footerData.map( link => (
             <li className='link-container' key={link.name}>

@@ -68,7 +68,7 @@ const ContactForm = () => {
 
         <label className='form-field'>
           <span className='form-label'>Subject</span>
-          <input className='input-field' placeholder="ex. Vim is superior" name='subject' type='text' value={data.subject} onChange={handleChange} />
+          <input className='input-field' placeholder="That's what she said" name='subject' type='text' value={data.subject} onChange={handleChange} />
         </label>
 
       </div>
