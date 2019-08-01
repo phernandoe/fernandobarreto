@@ -13,7 +13,6 @@ const Index = () => (
     <section className='section landing'>
 
       <Header title='Fernando Barreto' hide='true'/>
-      {/* <div className='index-spacer'></div> */}
       <hr />
 
       <p className='intro-p'>

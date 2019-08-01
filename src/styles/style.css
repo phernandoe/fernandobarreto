@@ -343,6 +343,7 @@ input:focus, textarea:focus {
 
   .intro-p {
     font-size: 2rem;
+    max-width: 480px;
   }
 
   textarea {
@@ -365,6 +366,7 @@ input:focus, textarea:focus {
 
   .intro-p {
     font-size: 2rem;
+    max-width: 480px;
   }
 
   textarea {
