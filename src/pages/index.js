@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import Header from '../components/Header';
 import { Link } from 'gatsby';
 
 const Index = () => (
@@ -11,8 +12,8 @@ const Index = () => (
 
     <section className='section landing'>
 
-      {/* <Header title='Fernando Barreto' /> */}
-      <div className='index-spacer'></div>
+      <Header title='Fernando Barreto' hide='true'/>
+      {/* <div className='index-spacer'></div> */}
       <hr />
 
       <p className='intro-p'>

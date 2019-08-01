@@ -337,6 +337,14 @@ input:focus, textarea:focus {
     max-width: 600px;
   }
 
+  .index-spacer {
+    height: 300px;
+  }
+
+  .intro-p {
+    font-size: 2rem;
+  }
+
   textarea {
     width: 100%;
     height: 170px;
@@ -353,6 +361,10 @@ input:focus, textarea:focus {
 
   .section-header {
     max-width: 850px;
+  }
+
+  .intro-p {
+    font-size: 2rem;
   }
 
   textarea {
