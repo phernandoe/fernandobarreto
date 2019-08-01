@@ -333,17 +333,13 @@ input:focus, textarea:focus {
     font-size: 15px
   }
 
-  .section-header {
-    max-width: 600px;
-  }
-
   .index-spacer {
     height: 300px;
   }
 
   .intro-p {
     font-size: 2rem;
-    max-width: 480px;
+    max-width: 600px;
   }
 
   textarea {
@@ -360,13 +356,9 @@ input:focus, textarea:focus {
     font-size: 20px
   }
 
-  .section-header {
-    max-width: 850px;
-  }
-
   .intro-p {
     font-size: 2rem;
-    max-width: 480px;
+    max-width: 900px;
   }
 
   textarea {

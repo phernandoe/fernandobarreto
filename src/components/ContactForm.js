@@ -58,17 +58,17 @@ const ContactForm = () => {
       <div className='form-fields-short'>
         <label className='form-field'>
           <span className='form-label'>Name</span>
-          <input className='input-field' placeholder="Michael" name='name' type='text' value={data.name} onChange={handleChange} />
+          <input className='input-field' name='name' type='text' value={data.name} onChange={handleChange} />
         </label>
 
         <label className='form-field'>
           <span className='form-label'>Email</span>
-          <input className='input-field' placeholder="mscott@email.com" name='email' type='email' value={data.email} onChange={handleChange} />
+          <input className='input-field' name='email' type='email' value={data.email} onChange={handleChange} />
         </label>
 
         <label className='form-field'>
           <span className='form-label'>Subject</span>
-          <input className='input-field' placeholder="That's what she said" name='subject' type='text' value={data.subject} onChange={handleChange} />
+          <input className='input-field' name='subject' type='text' value={data.subject} onChange={handleChange} />
         </label>
 
       </div>
