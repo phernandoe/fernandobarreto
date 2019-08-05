@@ -73,7 +73,7 @@ const data = {
     {
       title: 'Fernando Barreto',
       tools: 'React, HTML, CSS, Netlify, Gatsby, Figma',
-      desc: "This portfolio and it's many interations!",
+      desc: "This portfolio and it's many interations, built from scratch by myself.",
       link: 'https://fernandobarreto.netlify.com/'
     },
     {
