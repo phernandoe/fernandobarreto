@@ -38,18 +38,20 @@ const data = {
     learning: {
       title: 'Learning',
       items: [
-        'React',
         'Gatsby.js',
+        'Web Sockets',
+        'C'
       ]
     },
     languages: {
-      title: 'Languages',
+      title: 'Languages / Frameworks',
       items: [
         'Python',
         'Javascript',
         'Java',
         'HTML',
-        'CSS'
+        'CSS',
+        'React.js'
       ]
     },
     design: {
