@@ -197,7 +197,8 @@ hr {
 
 /* Projects */
 .projects {
-  --margin-l-r: 12em;
+  position: relative;
+  --margin-l-r: 12rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 75px;
@@ -224,9 +225,6 @@ hr {
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 2rem;
-}
-
-.project-info {
 }
 
 .project-tools {
@@ -323,34 +321,24 @@ input:focus, textarea:focus {
   #main-content {
     margin-top: auto;
   }
-
-  body {
-    overflow-x: hidden;
+  
+  .projects, .skills {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .skills-container, .project {
+    grid-template-columns: 1fr;
   }
 
   .index-spacer {
     height: 0px;
   }
 
-  .contact-form, .projects, .skills {
-    grid-template-columns: 2fr;
-  }
-
   .section-header {
     font-size: 5rem;
   }
 
-  .skill-list-title::before {
-    display: none;
-  }
-
-  .skills {
-    grid-gap: 5px;
-  }
-
-  :root {
-    font-size: 15px;
-  }
 }
 
 /* Large screens */
