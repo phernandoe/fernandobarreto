@@ -8,7 +8,7 @@ const Contact = () => (
 
   <Layout>
 
-    <section>
+    <section className='section'>
 
       <title>Fernando Barreto | Contact</title>
 

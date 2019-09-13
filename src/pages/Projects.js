@@ -12,7 +12,7 @@ const Projects = () => (
 
     <title>Fernando Barreto | Projects</title>
 
-    <section>
+    <section className='section'>
 
       <Header title='Things I Do' />
       <hr />
