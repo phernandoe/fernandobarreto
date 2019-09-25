@@ -35,14 +35,6 @@ const data = {
   ],
 
   skills: { 
-    learning: {
-      title: 'Learning',
-      items: [
-        'Gatsby.js',
-        'Web Sockets',
-        'C'
-      ]
-    },
     languages: {
       title: 'Languages & Frameworks',
       items: [
