@@ -63,9 +63,23 @@ textarea:-webkit-autofill:focus {
   color: var(--highlight-color);
 }
 
+.nav, .footer-link {
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
 .link {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.footer-link {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.footer-link:hover, .footer-link:focus {
+  border-bottom: 2px solid var(--background-color);
 }
 
 .link:focus {
@@ -108,17 +122,18 @@ textarea:-webkit-autofill:focus {
 /* Navigation & Footer*/
 .nav {
   margin-bottom: 2em;
-  letter-spacing: 1px;
   font-size: 1.2rem;
-  position: sticky;
   top: 0;
 }
 
 .footer {
   position: relative;
-  letter-spacing: 1px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  position: relative;
   margin-top: auto;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 2em 0px 0px 0px var(--text-color), -2em 0px 0px 0px var(--text-color);
 }
 
 /* The line in the middle */
