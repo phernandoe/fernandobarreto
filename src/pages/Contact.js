@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import ContactForm from '../components/ContactForm';
+import PageTitle  from '../components/PageTitle';
 
 const Contact = () => (
 
@@ -10,7 +11,7 @@ const Contact = () => (
 
     <section className='section'>
 
-      <title>Fernando Barreto | Contact</title>
+    <PageTitle title='Contact' />
 
       <Header title="Let's Chat!" />
       <hr />

@@ -2,13 +2,14 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
+import PageTitle  from '../components/PageTitle';
 import { Link } from 'gatsby';
 
 const Index = () => (
 
   <Layout>
 
-    <title>Fernando Barreto | Home</title>
+    <PageTitle title='Home' />
 
     <section className='section landing'>
 
