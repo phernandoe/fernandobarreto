@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  --padding: 30px;
+  --padding: 2em;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -71,23 +71,25 @@ textarea:-webkit-autofill:focus {
 .link {
   color: var(--text-color);
   text-decoration: none;
+  transition: color 100ms ease-in-out;
 }
 
 .footer-link {
   color: var(--background-color);
+  font-size: 1rem;
+  opacity: 0.75;
   text-decoration: none;
+  transition: opacity 100ms ease-in-out;
 }
 
 .footer-link:hover, .footer-link:focus {
+  opacity: 1;
+  outline: none;
   border-bottom: 2px solid var(--background-color);
 }
 
-.link:focus {
+.link:hover, .link:active, .link:focus {
   outline: none;
-  color: var(--hover-color);
-}
-
-.link:hover, .link:active {
   color: var(--hover-color);
   border-bottom: 2px solid var(--highlight-color);
 }
@@ -332,6 +334,10 @@ input:focus, textarea:focus {
 /* Media Queries */
 /* Moblile */
 @media (max-width: 675px) {
+
+  :root {
+    font-size: 12px;
+  }
 
   #main-content {
     margin-top: auto;
