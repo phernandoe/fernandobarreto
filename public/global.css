@@ -1,0 +1,67 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-family: serif;
+	padding-left: 10vw;
+	padding-right: 5vw;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+a {
+	color: var(--text-color);
+}
+
+section {
+	margin-top: 2.5em;
+	max-width: 800px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+:root {
+	--bg-color: #171717;
+	--text-color: #FFF;
+	--wrap-color: #303030;
+}
+
+/* special styling for the boxes */
+
+.wrap {
+	display: inline-block;
+}
+
+.wrap::after {
+	content: '';
+	--offset: -10px;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: var(--offset);
+	left: var(--offset);
+	outline: 2px solid var(--wrap-color);
+	z-index: -5;
+}
+
+.wrapper {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background: var(--bg-color);
+	outline: 2px solid var(--wrap-color);
+	z-index: -1;
+}
