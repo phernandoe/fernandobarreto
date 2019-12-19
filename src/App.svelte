@@ -28,6 +28,11 @@
 		margin: 0;
 	}
 
+	a:focus {
+		outline: none;
+		color: #e3b029;
+	}
+
 </style>
 
 <Intro/>
@@ -48,6 +53,7 @@
 	<h2>let's chat</h2>
 	<ul class="contact-list wrap">
 		<div class="wrapper"></div>
+		<a href="mailto:ferbar811@gmail.com">Email</a>
 		{#each contact as {name, link}}
 			<Contact name={name} link={link}/>
 		{/each}

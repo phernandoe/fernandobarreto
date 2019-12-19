@@ -32,6 +32,13 @@
     opacity: 0.95;
     visibility: hidden;
   }
+
+  .project-container:focus {
+    outline: none;
+  }
+  .project-container:focus > .project {
+    outline: 1px solid #e3b029;
+  }
   .project:hover::before {
     visibility: visible;
   }
@@ -58,7 +65,7 @@
 <a target="_blank" href="{link}" class="project-container">
   <div class="project wrap">
     <div class="wrapper"></div>
-    <h2><a target="_blank" href={link}>{title}</a></h2>
+    <h2>{title}</h2>
     <p>{desc}</p>
   </div>
 </a>
