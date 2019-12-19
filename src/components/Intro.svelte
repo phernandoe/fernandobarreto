@@ -11,11 +11,15 @@
         line-height: 1.05em;
     }
 
+    span {
+        color: #e3b029;
+    }
+
 </style>
 
 <section>
 	<p>
-    My name is Fernando Barreto. I'm a web developer
+    My name is <span>Fernando Barreto</span>. I'm a web developer
     & designer from PR interested in way too many things
     for my own good.
 	</p>

@@ -3,6 +3,7 @@
 	import Project from './components/Project.svelte';
 	import Skills from './components/Skills.svelte';
 	import Contact from './components/Contact.svelte';
+	import Wall from './components/Wall.svelte';
 	import data from '../content/data';
 
 	const projects = data.projects;
@@ -21,10 +22,6 @@
 	.contact-list {
 		position: relative;
 		padding: 0.5em;
-	}
-
-	section:last-child {
-		margin-bottom: 5em;
 	}
 
 	h2 {
@@ -56,3 +53,5 @@
 		{/each}
 	</ul>
 </section>
+
+<Wall />
