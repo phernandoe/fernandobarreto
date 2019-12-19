@@ -19,10 +19,10 @@
   }
 
   img {
-    box-shadow: -10px 10px 20px rgba(255, 255, 255, 0.25);
+    box-shadow: -5px 5px 0px rgba(227, 176, 41, 1);
     width: 100%;
     position: relative;
-    opacity: 0.75;
+    opacity: 0.5;
   }
 
   img:hover {

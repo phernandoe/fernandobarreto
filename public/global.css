@@ -67,3 +67,11 @@ ul {
 	outline: 2px solid var(--wrap-color);
 	z-index: -1;
 }
+
+/* media queries */
+
+@media (min-width: 2000px) {
+	body {
+		font-size: 20px;
+	}
+}
