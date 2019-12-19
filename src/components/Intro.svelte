@@ -1,7 +1,7 @@
 <style>
 
     section {
-        margin-top: 50vh;
+        margin-top: 40vh;
         max-width: 500px;
         margin-bottom: 0;
         padding-right: 0.75;

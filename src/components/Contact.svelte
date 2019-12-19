@@ -4,8 +4,8 @@
 </script>
 
 <style>
-  a {
-    text-decoration: none;
+  a:hover {
+    color: #e3b029;
     cursor: pointer;
   }
 </style>

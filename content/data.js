@@ -24,7 +24,8 @@ const data = {
         'Java',
         'HTML',
         'CSS',
-        'React.js'
+        'Node',
+        'React'
       ]
     },
     design: {
@@ -41,20 +42,20 @@ const data = {
   projects: [
     {
       title: 'Fernando Barreto',
-      tools: ['React', 'HTML', 'CSS', 'Netlify', 'Gatsby', 'Figma'],
+      tools: ['Svelte', 'CSS', 'Netlify', 'Figma'],
       desc: "This portfolio and it's many interations, built from scratch by myself.",
       link: 'https://fernandobarreto.netlify.com/'
     },
     {
       title: "Can't Decide",
       tools: ['HTML', 'CSS', 'Three.js'],
-      desc: 'Developed a small web app that takes user input and generates a 3-dimensional cube containing the input on each side, then simulates a dice roll. Created exclusively to make decisions for me. ',
+      desc: 'Small app that decides for you by simulating a dice roll.',
       link: 'https://phernandoe.github.io/CantDecide/'
     },
     {
       title: "What's My Winrate?",
       tools: ['HTML', 'CSS', 'Next.js', 'React', 'Express'],
-      desc: "Developed a tool that calculates the win rate of League of Legends’ accounts using the Riot Games API and displays it in a single page.",
+      desc: "Tool that calculates the win rate of League of Legends’ accounts using the Riot Games API and displays it in a single page.",
       link: 'https://github.com/phernandoe/WhatsMyWinrate'
     },
     {

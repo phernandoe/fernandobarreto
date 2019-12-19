@@ -13,10 +13,6 @@
 </script>
 
 <style>
-	h1 {
-		color: purple;
-	}
-
 	.skills {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -31,12 +27,16 @@
 		margin-bottom: 5em;
 	}
 
+	h2 {
+		margin: 0;
+	}
+
 </style>
 
 <Intro/>
 
 <section>
-  <h2>work</h2>
+  <h2>projects</h2>
   {#each projects as {title, desc, link} }
     <Project title={title} desc={desc} link={link}/>
   {/each}

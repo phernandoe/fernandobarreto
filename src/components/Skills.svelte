@@ -14,6 +14,10 @@
     line-height: 1.75;
   }
 
+  h2 {
+    margin: 0;
+	}
+
 </style>
 
 <div>
