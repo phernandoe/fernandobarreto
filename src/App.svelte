@@ -28,12 +28,24 @@
 		margin: 0;
 	}
 
-	a:focus {
+	a:focus, a:hover {
 		outline: none;
 		color: #e3b029;
 	}
 
+	.prettyline {
+		width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #e3b029, #e3b029 25%, #fff 25%, #fff 50%, #171717 50%, #171717 75%, #fff 75% );
+	}
+
 </style>
+
+<div class="prettyline">
+</div>
 
 <Intro/>
 
