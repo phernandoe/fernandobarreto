@@ -1,10 +1,11 @@
 <script>
-	import Intro from './components/Intro.svelte';
-	import Project from './components/Project.svelte';
-	import Skills from './components/Skills.svelte';
-	import Contact from './components/Contact.svelte';
-	import Wall from './components/Wall.svelte';
-	import data from '../content/data';
+	import '../global.css'
+	import Intro from '$lib/Intro.svelte';
+	import Project from '$lib/Project.svelte';
+	import Skills from '$lib/Skills.svelte';
+	import Contact from '$lib/Contact.svelte';
+	import Wall from '$lib/Wall.svelte';
+	import data from '../content/data.js';
 
 	const projects = data.projects;
 	const languages = data.skills.languages;
