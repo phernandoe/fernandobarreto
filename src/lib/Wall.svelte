@@ -3,7 +3,7 @@
   let pics = [];
 
   for (let i = 1; i <= 6; i++){
-    pics.push(`static/${i}.png`);
+    pics.push(`/${i}.png`);
   }
 
 
