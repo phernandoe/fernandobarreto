@@ -1,0 +1,20 @@
+#content {
+  max-width: 40em;
+  margin: 3em auto;
+  padding: 0.5em;
+  line-height: 1.40em;
+}
+
+#circle {
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+#pupil{
+  position:relative;
+}
+
+.out {
+  margin-top: 50px;
+}
